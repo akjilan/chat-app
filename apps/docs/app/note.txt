@@ -1,0 +1,33 @@
+1.project setup and create http server and instialize with confirming by consoling the port . 
+
+    import http, create a async funtion where create http server and set port default to 8000/process.env.port
+    add listener to http server
+    call function
+
+
+2. install socket server in another file and import socket server to use
+  
+  
+ create a class socketService 
+
+create a private property   ------------ private _io: Server;:
+create a constructor where create a instance of new Server
+
+you can also have a method of get io() and return this _io instance to access from the othe code .
+
+3.import the class socketService and create a instance of socketService
+
+    attach it with the http server
+
+
+4. socket connection:
+    in the socket class , create a public method where if a io is connected to the server (check by io.on ("connect") ,) then call functin with socket param where pass the message as event and with a async function
+    function 
+    call the listener instance method from the index.this
+
+5.at frontend :
+
+a. create a cotext folder and socketProvider component:
+    create a context onject using react.createContext
+    pass the children by calling the context object . and a create a interface and give props of the component calling time .
+
